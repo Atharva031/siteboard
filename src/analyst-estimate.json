@@ -1,0 +1,24 @@
+{
+  "annual": {
+    "date": ["202401", "202501", "202601", "202701"],
+    "revenue_estimate": [642273.5, 663045.9, 689127.9, 709971],
+    "ebit_estimate": [26576.97, 28509.94, 30599.49, 32624],
+    "ebitda_estimate": [39516.5, 41215.54, 43600.98, 44824],
+    "dividend_estimate": [2.28, 2.355, 2.4467, 2.76],
+    "per_share_eps_estimate": [5.9956, 7.0912, 7.688, 8.61],
+    "eps_nri_estimate": [6.3293, 7.0509, 7.688, 8.61],
+    "long_term_growth_rate_mean": 8.085,
+    "long_term_revenue_growth_rate_mean": "3.40"
+  },
+  "quarter": {
+    "date": ["202401", "202404", "202407", "202410", "202501"],
+    "revenue_estimate": [null, null, null, null, null],
+    "ebit_estimate": [null, null, null, null, null],
+    "ebitda_estimate": [null, null, null, null, null],
+    "dividend_estimate": [null, null, null, null, null],
+    "per_share_eps_estimate": [1.59, 1.63, 1.95, 1.64, 1.76],
+    "eps_nri_estimate": [1.63, 1.63, 1.93, 1.65, 1.83],
+    "long_term_growth_rate_mean": null,
+    "pettm_estimate": [31.94, 26.83, 31.7, 24.86, 24.25]
+  }
+}

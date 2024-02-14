@@ -1,0 +1,20 @@
+{
+  "company": "Walmart Inc",
+  "display_symbol": "WMT",
+  "exchange": "NYSE",
+  "Share_Outstanding": {
+    "value": "2692.23(Mil)"
+  },
+  "Institutional_Ownership": {
+    "percentage": "58.7%",
+    "value": "526.75(Mil)"
+  },
+  "Insider_Ownership": {
+    "percentage": "1.6%",
+    "value": "43.13(Mil)"
+  },
+  "Float_Percentage_of_TSO": {
+    "percentage": "52.76%",
+    "value": "1420.47Mil"
+  }
+}

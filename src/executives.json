@@ -1,0 +1,382 @@
+[
+  {
+    "name": "John D Rainey",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2024-02-01"
+  },
+  {
+    "name": "C Douglas Mcmillon",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2024-01-25"
+  },
+  {
+    "name": "John R. Furner",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2024-01-24"
+  },
+  {
+    "name": "Jim C Walton",
+    "position": "director, other: Director",
+    "transaction_date": "2023-12-29"
+  },
+  {
+    "name": "S Robson Walton",
+    "position": "director, 10 percent owner, officer: Chairman of the Board",
+    "transaction_date": "2023-12-29"
+  },
+  {
+    "name": "Alice L Walton",
+    "position": "10 percent owner",
+    "transaction_date": "2023-12-29"
+  },
+  {
+    "name": "Rachel L Brand",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2023-11-17"
+  },
+  {
+    "name": "Christopher James Nicholas",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2023-09-14"
+  },
+  {
+    "name": "David Chojnowski",
+    "position": "officer: Senior Vice President",
+    "transaction_date": "2023-06-14"
+  },
+  {
+    "name": "Daniel J Bartlett",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2023-05-23"
+  },
+  {
+    "name": "Randall L Stephenson",
+    "position": "director",
+    "transaction_date": "2023-03-15"
+  },
+  {
+    "name": "Judith J Mckenna",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2022-11-16"
+  },
+  {
+    "name": "M. Brett Biggs",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2022-03-03"
+  },
+  {
+    "name": "Marc E. Lore",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2021-01-21"
+  },
+  {
+    "name": "Kathryn J. Mclay",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2020-05-21"
+  },
+  {
+    "name": "Donna Morris",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2020-02-17"
+  },
+  {
+    "name": "Suresh Kumar",
+    "position": "officer: Chief Technology Officer",
+    "transaction_date": "2019-07-08"
+  },
+  {
+    "name": "Gregory S Foran",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2019-06-06"
+  },
+  {
+    "name": "Jacqueline P Canney",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2019-02-20"
+  },
+  {
+    "name": "Cesar Conde",
+    "position": "director",
+    "transaction_date": "2019-02-07"
+  },
+  {
+    "name": "Stephen Easterbrook",
+    "position": "director",
+    "transaction_date": "2018-05-30"
+  },
+  {
+    "name": "Sarah Friar",
+    "position": "director",
+    "transaction_date": "2018-02-07"
+  },
+  {
+    "name": "Jeffrey J Gearhart",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2017-11-29"
+  },
+  {
+    "name": "David Cheesewright",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2017-11-17"
+  },
+  {
+    "name": "Carla A Harris",
+    "position": "director",
+    "transaction_date": "2017-06-02"
+  },
+  {
+    "name": "Rosalind G Brewer",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2017-01-05"
+  },
+  {
+    "name": "Steven P Whaley",
+    "position": "officer: Senior Vice President",
+    "transaction_date": "2016-08-26"
+  },
+  {
+    "name": "Steuart L Walton",
+    "position": "director",
+    "transaction_date": "2016-06-03"
+  },
+  {
+    "name": "Rollin L. Ford",
+    "position": "officer: EVP and CIO",
+    "transaction_date": "2016-02-25"
+  },
+  {
+    "name": "Timothy Patrick Flynn",
+    "position": "director",
+    "transaction_date": "2015-12-02"
+  },
+  {
+    "name": "Thomas W Horton",
+    "position": "director",
+    "transaction_date": "2014-11-21"
+  },
+  {
+    "name": "Mary Susan Chambers",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2014-11-19"
+  },
+  {
+    "name": "Charles M Holley",
+    "position": "officer: Senior Vice President",
+    "transaction_date": "2014-11-17"
+  },
+  {
+    "name": "Michael T Duke",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2014-11-14"
+  },
+  {
+    "name": "Kevin Systrom",
+    "position": "director",
+    "transaction_date": "2014-09-26"
+  },
+  {
+    "name": "William S Simon",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2014-03-21"
+  },
+  {
+    "name": "Pamela Craig",
+    "position": "director",
+    "transaction_date": "2013-11-22"
+  },
+  {
+    "name": "Leslie A Dach",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2012-11-20"
+  },
+  {
+    "name": "Marissa A Mayer",
+    "position": "director",
+    "transaction_date": "2012-06-01"
+  },
+  {
+    "name": "Scott H Lee Jr",
+    "position": "director, officer: President and CEO",
+    "transaction_date": "2012-03-27"
+  },
+  {
+    "name": "Wright Eduardo Castro",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2012-03-20"
+  },
+  {
+    "name": "Neil Ashe",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2012-01-16"
+  },
+  {
+    "name": "Walton Enterprises, Llc",
+    "position": "10 percent owner",
+    "transaction_date": "2011-12-08"
+  },
+  {
+    "name": "Thomas M Schoewe",
+    "position": "officer: Executive VP and CFO",
+    "transaction_date": "2010-11-23"
+  },
+  {
+    "name": "James Breyer",
+    "position": "director",
+    "transaction_date": "2010-11-19"
+  },
+  {
+    "name": "Steven Reinemund",
+    "position": "director",
+    "transaction_date": "2010-06-04"
+  },
+  {
+    "name": "Brian C Cornell",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2009-04-03"
+  },
+  {
+    "name": "M Michele Burns",
+    "position": "director",
+    "transaction_date": "2008-09-08"
+  },
+  {
+    "name": "Estate Of John T. Walton",
+    "position": "10 percent owner",
+    "transaction_date": "2008-07-02"
+  },
+  {
+    "name": "John T. Walton Estate Trust",
+    "position": "10 percent owner",
+    "transaction_date": "2008-07-02"
+  },
+  {
+    "name": "Gregory Boyd Penner",
+    "position": "director",
+    "transaction_date": "2008-06-06"
+  },
+  {
+    "name": "Arne M Sorenson",
+    "position": "director",
+    "transaction_date": "2008-06-06"
+  },
+  {
+    "name": "David D Glass",
+    "position": "director",
+    "transaction_date": "2007-09-21"
+  },
+  {
+    "name": "Estate Of Helen R. Walton",
+    "position": "other: Section 13(g) group member",
+    "transaction_date": "2007-06-28"
+  },
+  {
+    "name": "John B Menzer",
+    "position": "officer: Vice Chairman",
+    "transaction_date": "2007-06-25"
+  },
+  {
+    "name": "Allen I Questrom",
+    "position": "director",
+    "transaction_date": "2007-06-01"
+  },
+  {
+    "name": "Jack C Shewmaker",
+    "position": "director",
+    "transaction_date": "2007-03-22"
+  },
+  {
+    "name": "Roger C Corbett",
+    "position": "director",
+    "transaction_date": "2006-11-17"
+  },
+  {
+    "name": "Helen R Walton",
+    "position": "other: Section 13(g) group member (2)",
+    "transaction_date": "2006-10-06"
+  },
+  {
+    "name": "James I Cash",
+    "position": "director",
+    "transaction_date": "2006-06-02"
+  },
+  {
+    "name": "Aida Alvarez",
+    "position": "director",
+    "transaction_date": "2006-06-02"
+  },
+  {
+    "name": "John D Opie",
+    "position": "director",
+    "transaction_date": "2006-03-31"
+  },
+  {
+    "name": "Thomas D Hyde",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2006-03-01"
+  },
+  {
+    "name": "Lawrence V Jackson",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2006-03-01"
+  },
+  {
+    "name": "Roland A Hernandez",
+    "position": "director",
+    "transaction_date": "2006-01-31"
+  },
+  {
+    "name": "Linda S Wolf",
+    "position": "director",
+    "transaction_date": "2006-01-31"
+  },
+  {
+    "name": "Douglas N Daft",
+    "position": "director",
+    "transaction_date": "2005-12-01"
+  },
+  {
+    "name": "Christopher J Williams",
+    "position": "director",
+    "transaction_date": "2005-04-07"
+  },
+  {
+    "name": "Thomas M Coughlin",
+    "position": "director, officer: Vice Chairman of the Board",
+    "transaction_date": "2005-02-23"
+  },
+  {
+    "name": "Brian Kevin Turner",
+    "position": "officer: Executive Vice President",
+    "transaction_date": "2005-02-22"
+  },
+  {
+    "name": "John T Walton",
+    "position": "director",
+    "transaction_date": "2004-09-22"
+  },
+  {
+    "name": "John T Chambers",
+    "position": "director",
+    "transaction_date": "2003-07-01"
+  },
+  {
+    "name": "J Paul Reason",
+    "position": "director",
+    "transaction_date": "2003-06-10"
+  },
+  {
+    "name": "Jose H Villarreal",
+    "position": "director",
+    "transaction_date": "2003-06-10"
+  },
+  {
+    "name": "Dawn G Lepore",
+    "position": "director",
+    "transaction_date": "2003-06-10"
+  },
+  {
+    "name": "Stanley C Gault",
+    "position": "director",
+    "transaction_date": "2003-06-10"
+  }
+]

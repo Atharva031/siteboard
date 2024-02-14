@@ -1,0 +1,197 @@
+{
+  "business": {
+    "annual": [
+      {
+        "Walmart US": 307833,
+        "Sam's Club": 57365,
+        "Membership and other income": 4556,
+        "Walmart International": 116119,
+        "date": "2017-01"
+      },
+      {
+        "Walmart US": 318477,
+        "Walmart International": 118068,
+        "Membership and other income": 4582,
+        "Sam's Club": 59216,
+        "date": "2018-01"
+      },
+      {
+        "Walmart US": 331666,
+        "Sam's Club": 57839,
+        "Walmart International": 120824,
+        "Membership and other income": 4076,
+        "date": "2019-01"
+      },
+      {
+        "Walmart US": 341004,
+        "Walmart International": 120130,
+        "Sam's Club": 58792,
+        "Membership and other income": 4038,
+        "date": "2020-01"
+      },
+      {
+        "Walmart US": 369963,
+        "Membership and other income": 3918,
+        "Sam's Club": 63910,
+        "Walmart International": 121360,
+        "date": "2021-01"
+      },
+      {
+        "Walmart US": 393247,
+        "Membership and other income": 4992,
+        "Sam's Club": 73556,
+        "Walmart International": 100959,
+        "date": "2022-01"
+      },
+      {
+        "Walmart US": 420553,
+        "Membership and other income": 5408,
+        "Sam's Club": 84345,
+        "Walmart International": 100983,
+        "date": "2023-01"
+      }
+    ],
+    "quarterly": [
+      {
+        "Walmart US": 99585,
+        "Sam's Club": 16527,
+        "Membership and other income": 1094,
+        "Walmart International": 34873,
+        "date": "2021-01"
+      },
+      {
+        "Walmart US": 93167,
+        "Membership and other income": 1151,
+        "Sam's Club": 16692,
+        "Walmart International": 27300,
+        "date": "2021-04"
+      },
+      {
+        "Walmart US": 98192,
+        "Walmart International": 23035,
+        "Membership and other income": 1177,
+        "Sam's Club": 18644,
+        "date": "2021-07"
+      },
+      {
+        "Walmart US": 96609,
+        "Walmart International": 23627,
+        "Sam's Club": 18971,
+        "Membership and other income": 1318,
+        "date": "2021-10"
+      },
+      {
+        "Walmart US": 105279,
+        "Sam's Club": 19249,
+        "Membership and other income": 1346,
+        "Walmart International": 26997,
+        "date": "2022-01"
+      },
+      {
+        "Walmart US": 96904,
+        "Membership and other income": 1281,
+        "Sam's Club": 19621,
+        "Walmart International": 23763,
+        "date": "2022-04"
+      },
+      {
+        "Walmart US": 105130,
+        "Membership and other income": 1478,
+        "Walmart International": 24350,
+        "Sam's Club": 21901,
+        "date": "2022-07"
+      },
+      {
+        "Walmart US": 104775,
+        "Membership and other income": 1344,
+        "Walmart International": 25295,
+        "Sam's Club": 21399,
+        "date": "2022-10"
+      },
+      {
+        "Walmart US": 113744,
+        "Walmart International": 27575,
+        "Sam's Club": 21424,
+        "Membership and other income": 1305,
+        "date": "2023-01"
+      },
+      {
+        "Walmart US": 103901,
+        "Membership and other income": 1297,
+        "Sam's Club": 20499,
+        "Walmart International": 26604,
+        "date": "2023-04"
+      },
+      {
+        "Walmart US": 110854,
+        "Membership and other income": 1352,
+        "Sam's Club": 21830,
+        "Walmart International": 27596,
+        "date": "2023-07"
+      },
+      {
+        "Walmart US": 109419,
+        "Membership and other income": 1365,
+        "Sam's Club": 21998,
+        "Walmart International": 28022,
+        "date": "2023-10"
+      }
+    ],
+    "keys": [
+      "Walmart US",
+      "Sam's Club",
+      "Membership and other income",
+      "Walmart International"
+    ],
+    "ttm": [
+      {
+        "date": "TTM",
+        "Walmart US": 437918,
+        "Walmart International": 109797,
+        "Sam's Club": 85751,
+        "Membership and other income": 5319
+      }
+    ]
+  },
+  "geographic": {
+    "annual": [
+      {
+        "US Operations": 367784,
+        "Non-US": 118089,
+        "date": "2017-01"
+      },
+      {
+        "US Operations": 380580,
+        "Non-US": 119763,
+        "date": "2018-01"
+      },
+      {
+        "US Operations": 392265,
+        "Non-US": 122140,
+        "date": "2019-01"
+      },
+      {
+        "US Operations": 402532,
+        "Non-US": 121432,
+        "date": "2020-01"
+      },
+      {
+        "US Operations": 436649,
+        "Non-US": 122502,
+        "date": "2021-01"
+      },
+      {
+        "US Operations": 470295,
+        "Non-US Operations": 102459,
+        "date": "2022-01"
+      },
+      {
+        "US Operations": 508685,
+        "Non-US Operations": 102604,
+        "date": "2023-01"
+      }
+    ],
+    "quarterly": [],
+    "keys": ["US Operations", "Non-US", "Non-US Operations"]
+  }
+}

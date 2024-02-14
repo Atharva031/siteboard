@@ -1,0 +1,118 @@
+[
+  {
+    "key": "price",
+    "name": "Price"
+  },
+  {
+    "key": "revenue",
+    "name": "Revenue"
+  },
+  {
+    "key": "revenue_estimate",
+    "name": "Revenue with Estimate"
+  },
+  {
+    "key": "net_income",
+    "name": "Net Income"
+  },
+  {
+    "key": "pettm",
+    "name": "PE Ratio (TTM)"
+  },
+  {
+    "key": "price_to_owner_earnings",
+    "name": "Price-to-Owner-Earnings"
+  },
+  {
+    "key": "ps_ratio",
+    "name": "PS Ratio"
+  },
+  {
+    "key": "pb_ratio",
+    "name": "PB Ratio"
+  },
+  {
+    "key": "peg_ratio",
+    "name": "PEG Ratio"
+  },
+  {
+    "key": "yield",
+    "name": "Dividend Yield %"
+  },
+  {
+    "key": "mktcap",
+    "name": "Market Cap"
+  },
+  {
+    "key": "enterprise_value",
+    "name": "Enterprise Value"
+  },
+  {
+    "key": "shares_outstanding",
+    "name": "Shares Outstanding (Diluted Average)"
+  },
+  {
+    "key": "earning_per_share_diluted",
+    "name": "Earnings per Share (Diluted)"
+  },
+  {
+    "key": "per_share_eps_estimate",
+    "name": "EPS with Estimate"
+  },
+  {
+    "key": "eps_without_nri",
+    "name": "EPS without NRI"
+  },
+  {
+    "key": "owner_earnings",
+    "name": "Owner Earnings per Share (TTM)"
+  },
+  {
+    "key": "maxpe",
+    "name": "Price at Max PE without NRI"
+  },
+  {
+    "key": "medpe",
+    "name": "Price at Med PE without NRI"
+  },
+  {
+    "key": "minpe",
+    "name": "Price at Min PE without NRI"
+  },
+  {
+    "key": "custmpe",
+    "name": "Price at PE(without NRI)="
+  },
+  {
+    "key": "custmpeestimate",
+    "name": "Price at PE(without NRI with Estimate)="
+  },
+  {
+    "key": "maxps",
+    "name": "Price at Max PS Ratio"
+  },
+  {
+    "key": "medps",
+    "name": "Price at Med PS Ratio"
+  },
+  {
+    "key": "minps",
+    "name": "Price at Min PS Ratio"
+  },
+  {
+    "key": "custmps",
+    "name": "Price at PS Ratio="
+  },
+  {
+    "key": "maxpb",
+    "name": "Price at Max PB Ratio"
+  },
+  {
+    "key": "medpb",
+    "name": "Price at Med PB Ratio"
+  },
+  {
+    "key": "custmpb",
+    "name": "Price at PB Ratio="
+  }
+]

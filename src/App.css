@@ -1,0 +1,52 @@
+/* App.css */
+
+body {
+  background-color: #1f1f1f; /* Dark background color */
+  color: #ffffff; /* Text color for dark mode */
+}
+
+.App {
+  text-align: center;
+}
+
+.Table {
+  margin: 20px auto;
+}
+
+.Table table {
+  width: 60%; /* Decreased width for a smaller table */
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #282828; /* Dark background color for the table */
+}
+
+.Table th,
+.Table td {
+  border: 1px solid #404040; /* Slightly lighter border color */
+  padding: 12px;
+  text-align: left;
+}
+
+.Table th {
+  background-color: #383838; /* Darker background color for table header */
+}
+
+.Table th:first-child,
+.Table td:first-child {
+  text-align: center;
+}
+
+.Table tr:nth-child(even) {
+  background-color: #303030; /* Even row background color */
+}
+
+.Table tr:hover {
+  background-color: #404040; /* Hover background color */
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* White text color */
+}
