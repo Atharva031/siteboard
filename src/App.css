@@ -1,8 +1,9 @@
 /* App.css */
 
 body {
-  background-color: #1f1f1f; /* Dark background color */
-  color: #ffffff; /* Text color for dark mode */
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Text color for light mode */
+  font-family: Arial, sans-serif; /* Common font family for readability */
 }
 
 .App {
@@ -14,23 +15,24 @@ body {
 }
 
 .Table table {
-  width: 60%; /* Decreased width for a smaller table */
+  width: 80%; /* Increased width for a larger table */
   border-collapse: collapse;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #282828; /* Dark background color for the table */
+  background-color: #fff; /* White background color for the table */
 }
 
 .Table th,
 .Table td {
-  border: 1px solid #404040; /* Slightly lighter border color */
+  border: 1px solid #ddd; /* Lighter border color for contrast */
   padding: 12px;
   text-align: left;
 }
 
 .Table th {
-  background-color: #383838; /* Darker background color for table header */
+  background-color: #f0f0f0; /* Lighter background color for table header */
+  color: #333; /* Text color for table header */
 }
 
 .Table th:first-child,
@@ -39,14 +41,44 @@ body {
 }
 
 .Table tr:nth-child(even) {
-  background-color: #303030; /* Even row background color */
+  background-color: #f9f9f9; /* Even row background color */
 }
 
 .Table tr:hover {
-  background-color: #404040; /* Hover background color */
+  background-color: #f2f2f2; /* Hover background color */
 }
 
 h1 {
-  text-align: center;
-  color: #ffffff; /* White text color */
+  color: #333; /* Dark text color */
+  font-size: 24px; /* Increased font size for headings */
+  margin-bottom: 20px; /* Added margin bottom for spacing */
 }
+
+/* Custom styles for a stock market trading app feel */
+
+body {
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.Table th,
+.Table td {
+  font-size: 14px; /* Decreased font size for table cells */
+}
+
+.Table th:first-child,
+.Table td:first-child {
+  font-weight: bold; /* Bold font for first column in table */
+}
+
+.Table td {
+  color: #333; /* Text color for table data */
+}
+
+.Table tr:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.Table tr.selected {
+  background-color: #eaf5ff; /* Light blue background color for selected row */
+}
+
