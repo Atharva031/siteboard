@@ -3,8 +3,11 @@ import './App.css';
 import ProfitAndLoss from './financials.json';
 import Summary from './summary.json';
 import KeyRatios from './key-ratios.json';
-import CurrentDividends from './current-dividend.json'
-
+import CurrentDividends from './current-dividend.json';
+import AnalystEstimate from './analyst-estimate.json';
+import CurrentOwnership from './current-ownership.json';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 
 const keyRatioSummaryProfitablity = KeyRatios.Profitability;
 const keyRatioSummaryFundamentals = KeyRatios.Fundamental;
@@ -14,14 +17,14 @@ const keyRatioSummaryGrowth = KeyRatios.Growth;
 const keyRatioSummaryDividends = KeyRatios.Dividends;
 const CurrentDividendsSummary = CurrentDividends;
 const ValuationRatiosSummary = KeyRatios['Valuation Ratio']
-
+const ValuationChartSummary = Summary.summary.chart;
+const AnalystEstimateSummary = AnalystEstimate.annual.date;
 const annualsProfitAndLoss = ProfitAndLoss.financials.annuals;
 const quarterlyProfitAndLoss = ProfitAndLoss.financials.quarterly;
 const fiscalYearAnnual = annualsProfitAndLoss['Fiscal Year'];
 const fiscalYearQuarter = quarterlyProfitAndLoss['Fiscal Year'];
 
-
-
+const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#0088aa', '#ff0000'];
 
 const fundsMetrics = [
   'Total Liabilities',
@@ -385,46 +388,69 @@ const GFValueRankMetrics = [
   'Forward Rate of Return (Yacktman) %'
 ]
 
+const ValuationChartMetrics = [
+  'GF Value',
+  'Earnings Power Value',
+  'Net Current Asset Value',
+  'Tangible Book',
+  'Projected FCF',
+  'Median PS Value',
+  'Graham Number'
+]
+
+const AnalystEstimateMetrics = [
+  'date',
+  'revenue_estimate',
+  'ebit_estimate',
+  'ebitda_estimate',
+  'dividend_estimate',
+  'per_share_eps_estimate',
+  'eps_nri_estimate',
+  'long_term_revenue_growth_rate_mean',
+  'long_term_growth_rate_mean'
+]
+
+const chartValues = [
+  {name: 'GF Value', value: '163.59'},
+  {name: 'Earnings Power Value', value: '133.03'},
+  {name: 'Net Current Asset Value', value: '-33.910'},
+  {name: 'Tangible Book', value: '19.10'},
+  {name: 'Projected FCF', value: '83.38'},
+  {name: 'Graham Number', value: '49.50'},
+]
+
+const GFValueChart = [
+  {name: 'Profitability Rank', value: '7'},
+  {name: 'Growth Rank', value: '7'},
+  {name: 'Financial Strength', value: '7'},
+  {name: 'GF Value Rank ', value: '5'},
+  {name: 'Momentum Rank', value: '10'},
+]
+
+
+
+
 function TableRows({ data, label }) {
   // Check if data is undefined or null, return null if so
   if (!data) return null;
 
   return (
     <tbody>
+      {/* Render label row */}
       <tr>
         <td>{label}</td>
-        {data.map((amount, index) => (
-          <td key={index}>{amount}</td>
-        ))}
+        {/* Check if the data is an array */}
+        {Array.isArray(data) ? (
+          // If data is an array, render each value
+          data.map((amount, index) => <td key={index}>{amount}</td>)
+        ) : (
+          // If data is not an array, render the value directly
+          <td>{data}</td>
+        )}
       </tr>
     </tbody>
   );
 }
-
-// function renderObjectTableRow({ data, label }) {
-//   if (Array.isArray(data)) {
-//     return (
-//       <tr>
-//         <td>{label}</td>
-//         {data.map((amount, index) => (
-//           <td key={index}>{amount}</td>
-//         ))}
-//       </tr>
-//     );
-//   } 
-//   else if ( data && Object.keys(data).length) {
-//     console.log(data)
-//     // return Object.keys(data).map((key, index) => (
-//     //   <tr key={index}>
-//     //     <td>{key}</td>
-//     //     <td>{data[key]}</td>
-//     //   </tr>
-//     // ));
-//   }
-//   else {
-//     return null;
-//   }
-// }
 
 //1
 function renderSummary({ label})
@@ -472,8 +498,6 @@ if (keyRatioSummaryProfitablity && Object.keys(keyRatioSummaryProfitablity).leng
     }
   }
 }
-
-
 
 //2
 if (keyRatioSummaryFundamentals && Object.keys(keyRatioSummaryFundamentals).length) {
@@ -527,7 +551,7 @@ function PriceRatiosSummary({ label }) {
         return (
           <tr key={key}>
             <td>{label}</td>
-            <td>{keyRatioSummaryPrice[key]}</td> {/* Access the value corresponding to the key */}
+            <td>{keyRatioSummaryPrice[key]}</td>{/* Access the value corresponding to the key */}
           </tr>
         );
       }
@@ -668,7 +692,24 @@ function DividendSummary({ label }) {
     }
     return null;
   }
- 
+
+  //8
+  function ChartSummary({ label }) {
+  
+    if (ValuationChartSummary && Object.keys(ValuationChartSummary).length) {
+      for (let key of Object.keys(ValuationChartSummary)) {
+        if (key === label) {
+          return (
+            <tr key={key}>
+              <td>{label}</td>
+              <td>{ValuationChartSummary[key]}</td> {/* Access the value corresponding to the key */}
+            </tr>
+          );
+        }
+      }
+    }
+    return null;
+  }
 
 function App() {
   return (
@@ -946,6 +987,94 @@ function App() {
           ))}
         </table> 
       </div>
+
+      <div className='Table'>
+        <h1>Valuation Chart</h1>
+        <table>
+          {ValuationChartMetrics.map((metric, index) => (
+            ChartSummary({ label: metric, key: index })
+          ))}
+        </table> 
+      </div>
+
+      <div className='Table'>
+        <h1>Analyst Estimate (Annually)</h1>
+        <table>
+          {AnalystEstimateMetrics.map((metric, index) => (
+            <TableRows key={index} label={metric} data={AnalystEstimate.annual[metric]} />
+          ))}
+        </table>
+      </div>
+
+      <div className='Table'>
+        <h1>Analyst Estimate (Quarterly)</h1>
+        <table>
+          {AnalystEstimateMetrics.map((metric, index) => (
+            <TableRows key={index} label={metric} data={AnalystEstimate.quarter[metric]} />
+          ))}
+        </table>
+      </div>
+
+      <div className='Table'>
+        <h1>Key Statistics</h1>
+        <table>
+          <TableRows label="Revenue (TTM) (Mil $)" data={Summary.summary.company_data.revenue} />
+          <TableRows label="EPS (TTM) ($)" data={KeyRatios.Fundamental['EPS (TTM)']} />
+          <TableRows label="Beta" data={KeyRatios.Price.Beta} />
+          <TableRows label="Volatility %" data={Summary.summary.company_data.volatility} />
+          <TableRows label="14-Day RSI" data={KeyRatios.Price['14-Day RSI']} />
+          <TableRows label="14-Day ATR ($)" data={Summary.summary.company_data.atr_14} />
+          <TableRows label="20-Day SMA ($)" data={KeyRatios.Price['20-Day SMA']} />
+          <TableRows label="12-1 Month Momentum %" data={Summary.summary.ratio['12-1 Month Momentum %'].value} />
+          <TableRows label="52-Week Range ($)" data={Summary.summary.company_data.price52wlow + " - " + Summary.summary.company_data.price52whigh} />
+          <TableRows label="Shares Outstanding (Mil)" data={CurrentOwnership.Share_Outstanding.value} />
+        </table>
+      </div>
+
+      <div className='Table'>
+        <h1>Dividend Stats</h1>
+        <table>
+          <TableRows label="Dividend Yield " data={KeyRatios.Dividends['Dividend Yield % (10y Low)']} />
+          <TableRows label="Dividend Payout Ratio" data={KeyRatios.Dividends['Dividend Payout Ratio']} />
+        </table>
+      </div>
+
+      <h1>Valuation Chart</h1>
+      <div className="Chart">
+        <BarChart
+          width={900}
+          height={400}
+          layout="vertical"
+          data={chartValues}
+          margin={{ top: 10, right: 2, left: 5, bottom: 5 }} // Adjust margins
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" domain={['-40', '170']} /> {/* Adjust domain to prevent bars from exceeding grid lines */}
+          <YAxis type="category" dataKey="name" width={150} />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="value" fill="#8884d8" barSize={20} /> {/* Adjust bar size */}
+        </BarChart>
+      </div>
+      
+      <h1 style={{textAlign: 'center'}}>GF Score</h1>
+      <div className="ChartContainer">
+      <div className="ChartBox">
+        <RadarChart
+          cx={300}
+          cy={250}
+          outerRadius={150}
+          width={600}
+          height={500}
+          data={GFValueChart}
+        >
+          <PolarGrid />
+          <PolarAngleAxis dataKey="name" tick={{ fontSize: 14 }} />
+          <PolarRadiusAxis angle={30} domain={[0, 10]} tick={{ fontSize: 12 }} />
+          <Radar name="Rank" dataKey="value" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} strokeWidth={2} />
+        </RadarChart>
+      </div>
+    </div>
     </div>
   );
 }

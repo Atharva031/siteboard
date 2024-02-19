@@ -3,7 +3,7 @@
 body {
   background-color: #f4f4f4; /* Light background color */
   color: #333; /* Text color for light mode */
-  font-family: Arial, sans-serif; /* Common font family for readability */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font with a fallback to sans-serif */
 }
 
 .App {
@@ -81,4 +81,56 @@ body {
 .Table tr.selected {
   background-color: #eaf5ff; /* Light blue background color for selected row */
 }
+
+/* App.css */
+
+/* Existing styles */
+
+.Chart {
+  margin: 20px auto;
+}
+
+.recharts-cartesian-axis-tick {
+  font-size: 14px;
+}
+
+.recharts-text {
+  font-size: 14px;
+}
+
+.recharts-legend-wrapper {
+  font-size: 14px;
+}
+
+.recharts-tooltip-label {
+  font-weight: bold;
+}
+
+.recharts-tooltip-item {
+  font-size: 14px;
+}
+
+.recharts-tooltip-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ChartContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ChartBox {
+  width: 600px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+
+
 
